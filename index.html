@@ -465,7 +465,77 @@
             </li>
           </ul>
         </div>
+        <div class="foot-subscribe">
+          <p class="foot-subs-text">Subscribe</p>
+          <div class="foot-btn-wrap">
+            <input
+              type="email"
+              class="foot-email"
+              name="email"
+              placeholder="E-mail"
+            />
+            <div class="btn-wrap">
+              <button type="submit" class="foot-btn">Subscribe</button>
+              <svg class="foot-icon-send" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
       </div>
     </footer>
+    <div class="pop-up">
+      <div class="modal">
+        <div class="btn-quit-wrap">
+          <button class="btn-modal-quit" type="button"></button>
+          <svg class="quit-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </div>
+
+        <p class="modal-title">Leave your contacts and we will call you back</p>
+
+        <form class="modal-form">
+          <input
+            type="text"
+            class="user-modal"
+            name="user_name"
+            id="user_names"
+          />
+          <label class="modal-label" for="user_names">Name</label>
+
+          <input type="tel" class="user-phone" name="user_tel" id="user_tels" />
+          <label class="modal-label" for="user_tels">Phone</label>
+
+          <input
+            type="email"
+            class="user-mail"
+            name="user_email"
+            id="user_email"
+          />
+          <label class="modal-label" for="user_email">Email</label>
+
+          <textarea
+            class="user-commen"
+            name="user_com"
+            id="user_commeent"
+          ></textarea>
+          <label class="modal-label" for="user_commeent">Comment</label>
+        </form>
+
+        <input
+          type="checkbox"
+          class="user-tick"
+          name="user_ticker"
+          id="user_tickers"
+        />
+        <label class="modal-label" for="user_tickers"
+          >I accept the terms and conditions of the
+          <span class="ticker-desc">Privacy Policy</span></label
+        >
+
+        <button type="submit" class="btn-submit" class="modal-btn"></button>
+      </div>
+    </div>
   </body>
 </html>

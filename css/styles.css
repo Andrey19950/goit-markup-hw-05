@@ -193,7 +193,9 @@ a {
 }
 
 .main-button:hover,
-.main-button:focus {
+.main-button:focus,
+.foot-btn:hover,
+.foot-btn:focus {
   background-color: #404bbf;
 }
 
@@ -373,6 +375,7 @@ a {
 
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .port-list-item:hover {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -508,4 +511,162 @@ a {
 
 .foot-social-icon {
   fill: #f4f4fd;
+}
+
+.foot-subscribe {
+  margin-left: 80px;
+}
+
+.foot-subs-text {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.foot-btn-wrap {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.foot-email {
+  font-family: inherit;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  width: 264px;
+  height: 40px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background-color: inherit;
+  color: #fff;
+  padding: 8px 0 8px 16px;
+}
+
+.foot-email::placeholder {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+
+.btn-wrap {
+  position: relative;
+}
+
+.foot-btn {
+  border: none;
+  border-radius: 4px;
+  padding: 8px 24px;
+  width: 165px;
+  height: 40px;
+  background: #4d5ae5;
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-align: left;
+  color: #fff;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.foot-icon-send {
+  position: absolute;
+  top: 50%;
+  right: 24px;
+  transform: translateY(-50%);
+  margin-left: 16px;
+  fill: #fff;
+}
+
+.pop-up {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #2e2f42;
+}
+
+.modal {
+  position: absolute;
+  width: 408px;
+  height: 584px;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  border-radius: 4px;
+  background-color: #fcfcfc;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
+    0 2px 1px 0 rgba(0, 0, 0, 0.2);
+  padding: 24px;
+}
+
+.modal-form {
+}
+
+.btn-quit-wrap {
+  position: relative;
+}
+
+.btn-modal-quit {
+  display: block;
+  border-radius: 100%;
+  width: 24px;
+  height: 24px;
+  background-color: #e7e9fc;
+  margin-left: auto;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.quit-icon {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  fill: #2e2f42;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-modal-quit:hover,
+.btn-modal-quit:focus {
+  background-color: #404bbf;
+  border-color: #404bbf;
+}
+
+.btn-modal-quit:hover + .quit-icon,
+.btn-modal-quit:focus + .quit-icon {
+  fill: #fff;
+}
+
+.user-modal {
+}
+
+.modal-label {
+}
+
+.user-phone {
+}
+
+.user-mail {
+}
+
+.user-commen {
+}
+
+.user-tick {
+}
+
+.ticker-desc {
+}
+
+.btn-submit {
 }
