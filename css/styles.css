@@ -692,24 +692,25 @@ a {
   margin-bottom: 8px;
 }
 
-}
-
 .modal-label {
   display: block;
   font-family: inherit;
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.16667;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
   margin-bottom: 4px;
+  color #8e8f99;
 }
 
 .user-name-wrap {
   position: relative;
 }
 
-.user-modal {
+.user-modal,
+.user-phone,
+.user-mail {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   width: 360px;
@@ -723,8 +724,10 @@ a {
   letter-spacing: 0.04em;
   text-align: left;
   color: black;
-  outline: none;
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: transparent;
+  outline: transparent;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .person-icon {
@@ -739,24 +742,6 @@ a {
   position: relative;
 }
 
-.user-phone {
-  border: 1px solid rgba(46, 47, 66, 0.4);
-  border-radius: 4px;
-  width: 360px;
-  height: 40px;
-  padding: 11px 38px;
-
-  font-family: inherit;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.16667;
-  letter-spacing: 0.04em;
-  color: black;
-  outline: none;
-
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .user-phone-icon {
   position: absolute;
   top: 50%;
@@ -767,24 +752,6 @@ a {
 
 .user-mail-wrap {
   position: relative;
-}
-
-.user-mail {
-  border: 1px solid rgba(46, 47, 66, 0.4);
-  border-radius: 4px;
-  width: 360px;
-  height: 40px;
-  padding: 11px 38px;
-
-  font-family: inherit;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.16667;
-  letter-spacing: 0.04em;
-  color: black;
-  outline: none;
-
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .user-mail-icon {
@@ -816,7 +783,7 @@ a {
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
 
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .user-commen::placeholder {
@@ -868,22 +835,20 @@ a {
   fill: transparent;
 
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .checkbox-icon {
   fill: #ffffff;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.user-tick:checked + .modal-label-ticker .check-icon {
+.user-tick:checked + .modal-label-ticker .check-icon,
+.user-tick:checked + .modal-label-ticker .checkbox-icon {
   border: none;
   border-color: #404bbf;
   background-color: #404bbf;
-}
-
-.user-tick:checked + .modal-label-ticker .checkbox-icon {
-  fill: #f4f4fd;
+  fill: #F4F4FD;
 }
 
 .ticker-link {
@@ -927,11 +892,11 @@ input[type='text']:focus-within,
 input[type='tel']:focus-within,
 input[type='email']:focus-within,
 .user-commen:focus-within {
-  border: 1px solid #4d5ae5;
+border-color: 1px solid #4d5ae5;
 }
 
 input[type='text']:focus-within + .person-icon,
 input[type='tel']:focus-within + .user-phone-icon,
 input[type='email']:focus-within + .user-mail-icon {
   fill: #4d5ae5;
-}
+} 
